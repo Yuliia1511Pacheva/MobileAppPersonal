@@ -1,0 +1,114 @@
+.feature{
+    position: relative;
+    overflow: hidden;
+}
+
+.container-feature{
+    padding-top: 100px;
+    padding-bottom: 105px;
+}
+
+.section-title{
+    z-index: 999;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-weight: 700;
+
+    font-size: 20px;
+    line-height: 1.2;   
+    @media screen and (min-width: 768px) {
+        font-size: 24px;
+        line-height: 1.21;
+        margin-bottom: 40px;
+    } 
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 80px;
+
+    }
+}
+.feature-list{
+    margin-left: 50px;
+}
+.feature-text-box{
+    max-width: 886px;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+.feature-text{
+    text-align: center;
+    margin-bottom: 80px;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 0;
+    
+        &::after {
+                content: '';
+
+                background-image: linear-gradient(#00C5EB 20%,
+                        #B544FE 20%);
+                filter: blur(110.5px);        
+                width: 304px;
+                height: 203px;
+                position: absolute;
+                top: 85px;
+                right: 0;
+                z-index: -1;            
+            }
+}
+
+
+
+.feature-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 25px;
+
+        &::after {
+                content: '';
+                width: 1044.38px;
+                height: 823.76px;
+                // background-image: linear-gradient(#00C5EB 25%, #3D99F1 15.5%, #B544FE 25%);
+                background-image: linear-gradient(#00C5EB 0%, rgba(61, 153, 241, 0.62) 44.79%, #B544FE 100%);
+                
+                position: absolute;
+                filter: blur(109.5px);
+                transform: rotate(-59.96deg);
+                
+                z-index: -1;
+                left: -384.7px;
+            }
+}
+
+
+.feature-items{
+    width: 220px;
+    position: relative;   
+}
+
+
+.features-items-title{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    font-style: bold;
+    margin: 0;
+}
+
+.features-items-title::before{
+    content: '';
+    background-image: url(../images/feature-icon.svg);
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    margin-right: 12px;
+    left: -45px;
+    top: -4px;
+}
+
+.features-items-text{
+    font-size: 14px;
+    line-height: 1.21;
+}

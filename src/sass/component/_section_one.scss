@@ -1,0 +1,87 @@
+.hero{
+    background-color: $bg-color;
+    padding: 146px 0;
+    background-image: url(../../src/images/hero-img-desctop@1.png);
+    background-repeat: no-repeat;
+    background-position: top 10px right 47px;
+}
+.hero-container{
+    position: relative;
+}
+.hero-container::before{
+    position: absolute;
+    top: 70px;
+    left: 120px;
+    content: "";
+    display: inline-block;
+    max-width: 213px;
+    height: 29px;
+    background: linear-gradient(0deg, rgba(0, 197, 235, 0.5), rgba(0, 197, 235, 0.5)), #D9D9D9;
+        filter: blur(51.5px);
+    border-radius: 50%;  
+}
+
+.hero__title{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.2;
+    color: $white-color;
+
+    margin-bottom: 12px;
+}
+
+.hero__text {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    color: $white-color;
+
+    margin-bottom: 28px;
+}
+
+.hero__item {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.2;
+    color: $white-color;
+}
+
+.hero__item::before{
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-image: url(/src/images/list-item.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+
+.hero__list {
+    margin-bottom: 60px;
+}
+
+.hero__item:not(:last-child){
+    margin-bottom: 12px;
+}
+
+.main-button {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.19;
+    color: $white-color;
+    border: transparent;
+    border-radius: 5px;
+    background: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
+    max-width: 200px;
+    height: 42px;
+    padding: 11px 60px;
+    cursor: pointer;
+
+    &:hover,
+        &:focus {
+            background: rgba(6, 7, 27, 1);
+            border: 1px solid ;
+        }
+}

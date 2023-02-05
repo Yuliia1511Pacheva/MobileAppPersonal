@@ -1,0 +1,84 @@
+.section-three {
+    background-color: $bg-color;
+    color: $white-color;
+    padding: 60px 0;
+}
+
+.section-three-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+
+}
+
+.section-three-text {
+    font-size: 16px;
+    line-height: 19px;
+    width: 479px;
+    margin: 0 0 40px;
+}
+
+.section-three-conteiner {
+    display: flex;
+    gap: 161px;
+}
+
+.section-three-icon {
+    fill: $white-color;
+    display: flex;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
+    border-radius: 50%;
+
+}
+
+.icon-android {
+    padding: 12px 15px 13px;
+}
+
+.android {
+    width: 37px;
+    height: 35px;
+}
+
+.icon-appleinc {
+    padding: 12px 14px;
+}
+
+.appleinc {
+    width: 32px;
+    height: 36px;
+}
+
+.section-three-icons {
+    display: flex;
+    gap: 20px;
+}
+
+
+.section-three-icon:hover {
+    fill: $bg-color; stroke: rgba(181, 68, 254, 1);
+    background: $bg-color;
+    border-color: #B544FE;
+    border-width: 1px;
+    border-style: solid;
+    cursor: pointer;
+}
+
+.section-three-img1 {
+    position: absolute;
+    margin: -270px 104px;
+}
+
+.section-three-img2 {
+    position: absolute;
+    margin: -155px 580px;
+    z-index: 0;
+}
+.section-three-telephone {
+    position: absolute;
+    z-index: 1;
+}
